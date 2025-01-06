@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #1d2b64, #f8cdda);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.password-generator {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1d2b64;
+  margin-bottom: 20px;
+}
+
+/* Output Section */
+.output {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.output input {
+  flex: 1;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+}
+
+.output button {
+  background: #528cce;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.output button:hover {
+  background: #1d2b64;
+}
+
+/* Controls Section */
+.controls label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.controls input[type="range"] {
+  width: 100%;
+  margin-top: 5px;
+  appearance: none;
+  background: #ddd;
+  border-radius: 5px;
+  height: 5px;
+  outline: none;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #528cce;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.controls input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.controls label span {
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .password-generator{
+    width: 50%;
+    margin: auto;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .output button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .controls label {
+    font-size: 0.8rem;
+  }
+
+  .controls input[type="range"]::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+  }
+}
